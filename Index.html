@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Laser Institute</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="Images/favicon.png">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="sprig" viewBox="0 0 80 120">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 118C38 82 44 48 54 8"/>
+      <path d="M40 98C26 94 17 84 16 70c14 2 23 12 24 28z"/>
+      <path d="M42 84c14-3 22-12 24-26-14 2-23 12-24 26z"/>
+      <path d="M44 66C31 62 24 53 22 40c13 2 21 11 22 26z"/>
+      <path d="M47 50c12-3 19-11 21-23-12 2-20 10-21 23z"/>
+      <path d="M50 30C41 26 36 19 35 10c9 2 15 8 15 20z"/>
+    </g>
+  </symbol>
+</svg>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#home" aria-label="The Laser Institute, home">
+      <svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg>
+      <span class="logo-text">
+        <span class="logo-name">THE LASER INSTITUTE</span>
+        <span class="logo-sub">SMOOTH SKIN · CONFIDENCE · ALWAYS</span>
+      </span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a class="navlink active" href="#home">Home</a></li>
+        <li><a class="navlink" href="#about">About</a></li>
+        <li class="has-sub">
+          <a class="navlink" href="#treatments">Treatments
+            <svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.500l3 3 3-3"/></svg>
+          </a>
+          <div class="sub">
+            <a href="#face">Face</a>
+            <a href="#body">Body</a>
+          </div>
+        </li>
+        <li><a class="navlink" href="#prices">Prices</a></li>
+        <li><a class="navlink" href="#faq">FAQ</a></li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary mobile-cta" href="#contact">Book an Appointment</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary header-cta" href="#contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.500" y="5" width="17" height="15" rx="3"/><path d="M3.500 10h17M8 3v4M16 3v4"/></svg>
+        Book an Appointment
+      </a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-photo">
+      <div class="slot" data-slot="hero" data-label="Hero photo">
+        <img alt="Client wearing protective eyewear during a laser hair removal treatment">
+        <div class="ph">
+          <svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/><path d="M6 34l10-9 8 7 6-5 12 9"/></svg><span class="ph-label">Hero photo</span>
+        </div>
+      </div>
+    </div>
+    <p class="hero-note" aria-hidden="true">Because  you<br>deserve<br>smooth skin <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20C4 14 3 9.500 6 7c2-1.600 5-.8 6 1.500C13 6.200 16 5.400 18 7c3 2.500 2 7-6 13z"/></svg></p>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Laser Hair Removal</span>
+        <h1>Smooth Skin.<br>Lasting <em>Confidence.</em></h1>
+        <p class="lead">Advanced laser hair removal for the face and body, safe, effective and tailored to your skin.</p>
+        <a class="btn btn-primary" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.500" y="5" width="17" height="15" rx="3"/><path d="M3.500 10h17M8 3v4M16 3v4"/></svg>
+          Book an Appointment <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="values" aria-label="Why clients trust us">
+    <div class="wrap">
+      <ul class="values-card">
+        <li class="value">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6l14 5v11c0 9-6 16-14 20-8-4-14-11-14-20V11z"/><path d="M17.500 24l4.500 4.500 8.500-9"/></svg>
+          <h3>Safe &amp; Comfortable</h3>
+          <p>Advanced technology with your safety in mind</p>
+        </li>
+        <li class="value">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 4"/></svg>
+          <h3>Visible Results</h3>
+          <p>Smoother skin, longer lasting results</p>
+        </li>
+        <li class="value">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="17" r="7"/><path d="M10 40c1-8 7-13 14-13s13 5 14 13"/></svg>
+          <h3>Personalized Treatment</h3>
+          <p>Tailored to your skin type and needs</p>
+        </li>
+        <li class="value">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 11c4 6 4 14 0 21-4-7-4-15 0-21z"/><path d="M24 36C14 35 8 28 8 20c8 0 14 5 16 12"/><path d="M24 36c10-1 16-8 16-16-8 0-14 5-16 12"/></svg>
+          <h3>Professional Team</h3>
+          <p>Experienced and caring specialists</p>
+        </li>
+        <li class="value">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 40C8 28 8 14 18 12c4-1 6 2 6 4 0-2 2-5 6-4 10 2 10 16-6 28z"/></svg>
+          <h3>Modern &amp; Clean Clinic</h3>
+          <p>A comfortable space for your peace of mind</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="gallery" role="group" aria-label="Clinic gallery">
+        <div class="gallery-main">
+          <button class="g-arrow g-prev" id="g-prev" type="button" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.500 5.500L8 12l6.500 6.500"/></svg>
+          </button>
+          <button class="g-arrow g-next" id="g-next" type="button" aria-label="Next image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.500 5.500L16 12l-6.500 6.500"/></svg>
+          </button>
+          <div class="slot" id="gallery-main" data-slot="clinic1" data-label="Clinic photo">
+            <img alt="The Laser Institute treatment room">
+            <div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/><path d="M6 34l10-9 8 7 6-5 12 9"/></svg><span class="ph-label">Clinic photo</span></div>
+          </div>
+        </div>
+        <div class="thumbs">
+          <button class="thumb" type="button" aria-pressed="true" aria-label="Show treatment room" data-key="clinic1" data-label="Treatment room">
+            <div class="slot" data-slot="clinic1" data-label="Treatment room"><img alt=""><div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/></svg></div></div>
+          </button>
+          <button class="thumb" type="button" aria-pressed="false" aria-label="Show laser equipment" data-key="clinic2" data-label="Laser equipment">
+            <div class="slot" data-slot="clinic2" data-label="Laser equipment"><img alt=""><div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/></svg></div></div>
+          </button>
+          <button class="thumb" type="button" aria-pressed="false" aria-label="Show reception" data-key="clinic3" data-label="Reception">
+            <div class="slot" data-slot="clinic3" data-label="Reception"><img alt=""><div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/></svg></div></div>
+          </button>
+          <button class="thumb" type="button" aria-pressed="false" aria-label="Show lounge" data-key="clinic4" data-label="Lounge">
+            <div class="slot" data-slot="clinic4" data-label="Lounge"><img alt=""><div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/></svg></div></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <span class="eyebrow">About Us</span>
+        <h2>More Than Hair Removal. <em>It's Self-Care.</em></h2>
+        <p>At The Laser Institute, we believe smooth skin isn't just about appearance. It's about feeling good in your own skin. Our team combines advanced technology with personal attention to give you the best results, safely and comfortably.</p>
+        <a class="btn btn-ghost" href="#contact">Learn more about us <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+      <aside class="why" aria-labelledby="why-title">
+        <h3 id="why-title">Why Choose Us?</h3>
+        <ul class="checklist">
+          <li>Latest laser technology</li>
+          <li>Experienced professionals</li>
+          <li>Personalized treatment plans</li>
+          <li>Real results, long term</li>
+        </ul>
+        <div class="why-foot">
+          <span class="why-script">Your skin.<br>Our priority.</span>
+          <svg class="sprig" aria-hidden="true"><use href="#sprig"/></svg>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="treatments" style="padding-top:0">
+    <div class="wrap treat-grid">
+      <div class="treat-copy">
+        <span class="eyebrow">Our Treatments</span>
+        <h2>Laser Hair Removal for Face &amp; Body</h2>
+        <p>From delicate facial areas to larger body zones, we offer safe, effective and long-lasting results with advanced laser technology.</p>
+        <a class="btn btn-primary" href="#prices">View All Treatments <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="cards">
+        <article class="tcard" id="face">
+          <div class="photo">
+            <div class="slot" data-slot="face" data-label="Face photo">
+              <img alt="Close-up of a client's face with smooth, relaxed skin">
+              <div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/><path d="M6 34l10-9 8 7 6-5 12 9"/></svg><span class="ph-label">Face photo</span></div>
+            </div>
+          </div>
+          <div class="tcard-body">
+            <h3>Face</h3>
+            <ul class="checklist">
+              <li>Upper lip</li>
+              <li>Chin</li>
+              <li>Cheeks</li>
+              <li>Full face</li>
+            </ul>
+            <a class="link" href="#faq">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="tcard" id="body">
+          <div class="photo">
+            <div class="slot" data-slot="body" data-label="Body photo">
+              <img alt="Smooth legs after laser hair removal">
+              <div class="ph"><svg class="ph-ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="17" cy="21" r="3"/><path d="M6 34l10-9 8 7 6-5 12 9"/></svg><span class="ph-label">Body photo</span></div>
+            </div>
+          </div>
+          <div class="tcard-body">
+            <h3>Body</h3>
+            <ul class="checklist">
+              <li>Underarms</li>
+              <li>Arms</li>
+              <li>Legs</li>
+              <li>Bikini area</li>
+            </ul>
+            <a class="link" href="#faq">Learn more <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="Prices and frequently asked questions">
+    <div class="wrap info-grid">
+      <div class="prices" id="prices">
+        <span class="eyebrow">Prices</span>
+        <h2>Clear pricing, tailored to you</h2>
+        <p>Pricing depends on the treatment area and the number of sessions in your plan. Book a free consultation and we will give you a written quote before you commit to anything.</p>
+        <a class="btn btn-ghost" href="#contact">Request a Quote <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div id="faq">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions we hear most</h2>
+        <div class="faq">
+          <details>
+            <summary>Does laser hair removal hurt?</summary>
+            <p>Most clients describe a quick warm snap on the skin. Our systems cool the skin as they work, and we adjust settings to keep you comfortable.</p>
+          </details>
+          <details>
+            <summary>How many sessions will I need?</summary>
+            <p>Hair grows in cycles, so treatments are spaced several weeks apart. Most people need a series of sessions. We confirm a plan for you at your consultation.</p>
+          </details>
+          <details>
+            <summary>Is it suitable for my skin tone?</summary>
+            <p>We assess your skin and hair at your consultation and run a patch test before treatment, then choose settings that suit you.</p>
+          </details>
+          <details>
+            <summary>How should I prepare?</summary>
+            <p>Shave the area the day before, avoid sun exposure and waxing in the weeks leading up to your visit, and arrive with clean, product-free skin.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="f-item">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 35s-11-9.500-11-18a11 11 0 0 1 22 0c0 8.500-11 18-11 18z"/><circle cx="20" cy="17" r="4"/></svg>
+        <div><h3>Our Location</h3><p>Tel Aviv, Israel</p></div>
+      </div>
+      <div class="f-item">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 7h5l2.500 7-3.500 2.500c2 4 4.500 6.500 8.500 8.500L28 21.500l7 2.500v5c0 2-2 4-4 4C17 33 6 21 8 11c0-2 2-4 5-4z"/></svg>
+        <div><h3>Call Us</h3><a class="val" href="tel:+97231234567">+972 0 000 0000</a></div>
+      </div>
+      <div class="f-item">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="28" height="20" rx="3"/><path d="M7 12l13 10 13-10"/></svg>
+        <div><h3>Email Us</h3><a class="val" href="mailto:info@thelaser-institute.co.il">info@thelaser-institute.co.il</a></div>
+      </div>
+      <div class="f-item">
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social">
+            <a href="https://www.instagram.com/" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></svg></a>
+            <a href="https://www.facebook.com/" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.500 21v-8h2.700l.5-3.300h-3.200V7.800c0-1 .5-1.800 1.900-1.800H18V3.200C17.600 3.100 16.500 3 15.400 3 12.900 3 11.300 4.500 11.300 7.200v2.500H8.500V13h2.800v8z"/></svg></a>
+            <a href="https://www.tiktok.com/" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3v11.500a4 4 0 1 1-4-4"/><path d="M15 3c.4 2.600 2 4.200 4.500 4.500"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 THE LASER INSTITUTE. All rights reserved.</span>
+      <span>Smooth Skin · Lasting Confidence</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
